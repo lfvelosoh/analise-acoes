@@ -9,7 +9,8 @@
 
 ### Instalação das bibliotecas necessárias
 ```shell
-pip install yfinance --upgrade --no-cache-dir #yfinance
-pip install pandas #pandas
-pip install pandas_datareader #pandas datareader
+pip install yfinance --upgrade --no-cache-dir
+pip install pandas
+pip install pandas_datareader
+pip install matplotlib 
 ```
