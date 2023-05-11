@@ -3,6 +3,7 @@ import pandas as pd
 from pandas_datareader import data as pdr
 import yfinance as yf
 import datetime
+import os
 
 #realizando override para trabalhar com o pandas_datareader
 yf.pdr_override()
