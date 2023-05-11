@@ -7,7 +7,9 @@
 - [Wiki do Projeto](https://github.com/ranaroussi/yfinance/wiki)
 ----
 
-### Instalação da biblioteca
+### Instalação das bibliotecas necessárias
 ```shell
-pip install yfinance --upgrade --no-cache-dir 
+pip install yfinance --upgrade --no-cache-dir #yfinance
+pip install pandas #pandas
+pip install pandas_datareader #pandas datareader
 ```
