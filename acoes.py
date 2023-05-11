@@ -63,11 +63,13 @@ df_database = pd.read_csv("./database.csv", sep = ',') #importando dados de um c
 pd.options.display.float_format = '${:,.2f}'.format
 print(df_database[['Date', 'Acao','Close', 'Dividends']].query('Dividends > 0'))
 
+
 df_dy = df_database[['Date', 'Acao','Close', 'Dividends']].query('Dividends > 0')
 df_dy['DY'] = (df_dy.Dividends / df_dy.Close)*100
 pd.options.display.float_format = '{:,.2f}%'.format
 print(df_dy[['Date', 'Acao', 'DY']])
 
+#criar os graficos
 x='Date'
 y='DY'
 teste = df_dy.plot.bar(x,y, 
